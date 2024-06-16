@@ -39,7 +39,14 @@ const options = {
   onClose(selectedDates) {
     if (selectedDates[0] < Date.now()) {
       iziToast.show({
-    position: 'topCenter', // bottomRight, bottomLeft, topRight, topLeft, topCenter, bottomCenter, center,
+        position: 'topCenter', 
+        icon: 'icon-svg',
+        iconUrl: '../img/Group.png',
+        iconColor: 'white',
+        title: 'Error', 
+        titleColor: 'white',
+        backgroundColor: 'red',
+        messageColor: 'white',
     message: 'Please choose a date in the future'
 });
       btn.disabled = 'true';
