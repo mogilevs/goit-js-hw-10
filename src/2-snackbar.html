@@ -1,40 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gallery</title>
-    <link rel="stylesheet" href="./css/styles.css" />
-</head>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
 
-<body>
+  <body>
+    <form class="form">
+      <label>
+        Delay (ms)
+        <input type="number" name="delay" required />
+      </label>
+
+      <fieldset>
+        <legend>State</legend>
+        <label>
+          <input type="radio" name="state" value="fulfilled" required />
+          Fulfilled
+        </label>
+        <label>
+          <input type="radio" name="state" value="rejected" required />
+          Rejected
+        </label>
+      </fieldset>
+
+      <button type="submit">Create notification</button>
+    </form>
     <a class="link" href="./index.html">Go Back</a>
-
-<form class="form">
-  <label>
-    Delay (ms)
-    <input type="number" name="delay" required />
-  </label>
-
-  <fieldset>
-    <legend>State</legend>
-    <label>
-      <input type="radio" name="state" value="fulfilled" required />
-      Fulfilled
-    </label>
-    <label>
-      <input type="radio" name="state" value="rejected" required />
-      Rejected
-    </label>
-  </fieldset>
-
-  <button type="submit">Create notification</button>
-</form>
-
-<script type="module" src="./js/2-snackbar.js"></script>
-
-</body>
-
+    <script type="module" src="./js/2-snackbar.js"></script>
+  </body>
 </html>
-
