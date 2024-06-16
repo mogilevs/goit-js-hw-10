@@ -41,7 +41,7 @@ const options = {
       iziToast.show({
         position: 'topCenter', 
         icon: 'icon-svg',
-        iconUrl: '.../src/img/Group.png',
+        iconUrl: '../src/img/Group.png',
         iconColor: 'white',
         title: 'Error', 
         titleColor: 'white',
