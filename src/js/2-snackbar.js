@@ -23,7 +23,7 @@ function formHandler(evt) {
       iziToast.show({
         position: 'topCenter',
         icon: 'icon-svg',
-        iconUrl: './img/ok.png',
+        iconUrl: '../img/ok.png',
         iconColor: 'white',
         title: 'OK',
         titleColor: 'white',
