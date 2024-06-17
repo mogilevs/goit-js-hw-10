@@ -2,6 +2,7 @@ import flatpickr from 'flatpickr';
 import 'flatpickr/dist/flatpickr.min.css';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
+import Group from '../img/Group.png';
 
 function convertMs(ms) {
   // Number of milliseconds per unit of time
@@ -41,7 +42,7 @@ const options = {
       iziToast.show({
         position: 'topCenter', 
         icon: 'icon-svg',
-        iconUrl: '../img/Group.png',
+        iconUrl: Group,
         iconColor: 'white',
         title: 'Error', 
         titleColor: 'white',
