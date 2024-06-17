@@ -1,5 +1,7 @@
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
+import ok from '../img/ok.png';
+import err from '../img/err.png';
 
 const form = document.querySelector('.form');
 form.addEventListener('submit', formHandler);
@@ -23,7 +25,7 @@ function formHandler(evt) {
       iziToast.show({
         position: 'topCenter',
         icon: 'icon-svg',
-        iconUrl: '../img/ok.png',
+        iconUrl: ok,
         iconColor: 'white',
         title: 'OK',
         titleColor: 'white',
@@ -36,7 +38,7 @@ function formHandler(evt) {
       iziToast.show({
         position: 'topCenter',
         icon: 'icon-svg',
-        iconUrl: '../img/err.png',
+        iconUrl: err,
         iconColor: 'white',
         title: 'Error',
         titleColor: 'white',
