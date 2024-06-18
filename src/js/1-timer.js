@@ -50,7 +50,7 @@ const options = {
         messageColor: 'white',
     message: 'Please choose a date in the future'
 });
-      btn.disabled = 'true';
+      btn.disabled = true;
       return;
     } else {
       userSelectedDate = selectedDates[0];
@@ -73,8 +73,8 @@ function startTimer() {
       hours.textContent = addZero(remainingTime.hours);
       minutes.textContent = addZero(remainingTime.minutes);
       seconds.textContent = addZero(remainingTime.seconds);
-      btn.disabled = 'true';
-      input.disabled = 'true';
+      btn.disabled = true;
+      input.disabled = true;
     } else {
       clearInterval(intervalId);
       btn.removeAttribute('disabled');
